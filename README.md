@@ -46,11 +46,6 @@ Clone the repo with submodules, or use `git submodule update --init --recursive`
 jpm build
 ```
 
-This should compile `build\jaylib.so` on nix systems, which you can import in a janet repl. Jaylib does not build
-on Windows with jpm because jpm expects MSVC, but Raylib requires gcc or clang
-for C99 features that MSVC does not support. A long term goal is to be able to install jaylib on windows
-with minimal dependencies on the external build system.
-
 ```clojure
 (use ./build/jaylib)
 ```
